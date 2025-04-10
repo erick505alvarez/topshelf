@@ -1,14 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import heroImage from '../assets/products/DESCA-lifestyle.webp';
 ---
 
 <Layout title="Welcome to TopShelf">
   <div class="relative rounded-xl overflow-hidden">
-    <img
-      src="/products/DESCA-lifestyle.webp"
+    <Image
+      src={heroImage}
       alt="TopShelf Lifestyle"
       class="w-full h-[600px] object-cover"
       loading="eager"
+      width={1920}
+      height={600}
     />
     <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
       <div class="text-center text-white px-4 sm:px-6">

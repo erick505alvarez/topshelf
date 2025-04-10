@@ -1,5 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import vermicelliImage from '../assets/recipes/Vermicelli-Noodle-Bowl.webp';
+import smoothieImage from '../assets/recipes/Mixed Berries and Banana Smoothie.webp';
+import chickenImage from '../assets/recipes/air-fryer-chicken-broccoli.webp';
+import farroImage from '../assets/recipes/Farro-White-Bean-Salad.webp';
 ---
 
 <Layout title="Health Body Balance - Recipes">
@@ -11,7 +16,13 @@ import Layout from '../layouts/Layout.astro';
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     <a href="/recipes/vermicelli-bowl" class="group">
       <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:scale-105">
-        <img src="/recipes/Vermicelli-Noodle-Bowl.webp" alt="Vermicelli Noodle Bowl with Grilled Shrimp" class="w-full aspect-[4/3] object-cover" />
+        <Image
+          src={vermicelliImage}
+          alt="Vermicelli Noodle Bowl with Grilled Shrimp"
+          class="w-full aspect-[4/3] object-cover"
+          width={800}
+          height={600}
+        />
         <div class="p-6">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Vermicelli Noodle Bowl with Grilled Shrimp</h3>
           <p class="text-gray-600">A vibrant and refreshing dish that combines fresh ingredients with bold flavors!</p>
@@ -21,7 +32,13 @@ import Layout from '../layouts/Layout.astro';
 
     <a href="/recipes/berry-smoothie" class="group">
       <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:scale-105">
-        <img src="/recipes/Mixed Berries and Banana Smoothie.webp" alt="Mixed Berries and Banana Smoothie" class="w-full aspect-[4/3] object-cover" />
+        <Image
+          src={smoothieImage}
+          alt="Mixed Berries and Banana Smoothie"
+          class="w-full aspect-[4/3] object-cover"
+          width={800}
+          height={600}
+        />
         <div class="p-6">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Mixed Berries and Banana Smoothie</h3>
           <p class="text-gray-600">A refreshing and versatile treat that's perfect for breakfast or a snack!</p>
@@ -31,7 +48,13 @@ import Layout from '../layouts/Layout.astro';
 
     <a href="/recipes/air-fryer-chicken" class="group">
       <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:scale-105">
-        <img src="/recipes/air-fryer-chicken-broccoli.webp" alt="Healthy Air Fryer Parmesan Chicken with Broccoli" class="w-full aspect-[4/3] object-cover" />
+        <Image
+          src={chickenImage}
+          alt="Healthy Air Fryer Parmesan Chicken with Broccoli"
+          class="w-full aspect-[4/3] object-cover"
+          width={800}
+          height={600}
+        />
         <div class="p-6">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Healthy Air Fryer Parmesan Chicken with Broccoli</h3>
           <p class="text-gray-600">A crispy and wholesome dish that's ready in just 30 minutes!</p>
@@ -41,7 +64,13 @@ import Layout from '../layouts/Layout.astro';
 
     <a href="/recipes/farro-salad" class="group">
       <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:scale-105">
-        <img src="/recipes/Farro-White-Bean-Salad.webp" alt="Anti-Inflammatory Farro & White Bean Salad" class="w-full aspect-[4/3] object-cover" />
+        <Image
+          src={farroImage}
+          alt="Anti-Inflammatory Farro & White Bean Salad"
+          class="w-full aspect-[4/3] object-cover"
+          width={800}
+          height={600}
+        />
         <div class="p-6">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Anti-Inflammatory Farro & White Bean Salad</h3>
           <p class="text-gray-600">A vibrant and nutrient-packed dish designed to fuel the body and fight inflammation!</p>

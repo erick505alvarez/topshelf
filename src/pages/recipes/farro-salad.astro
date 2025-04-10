@@ -1,5 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import farroImage from '../../assets/recipes/Farro-White-Bean-Salad.webp';
 ---
 
 <Layout title="Anti-Inflammatory Farro & White Bean Salad - Health Body Balance">
@@ -10,7 +12,13 @@ import Layout from '../../layouts/Layout.astro';
     </div>
 
     <div class="mb-8">
-      <img src="/recipes/Farro-White-Bean-Salad.webp" alt="Anti-Inflammatory Farro & White Bean Salad" class="w-full h-96 object-cover rounded-lg shadow-md" />
+      <Image
+        src={farroImage}
+        alt="Anti-Inflammatory Farro & White Bean Salad"
+        class="w-full h-96 object-cover rounded-lg shadow-md"
+        width={1200}
+        height={800}
+      />
     </div>
 
     <div class="bg-white p-8 rounded-lg shadow-md">

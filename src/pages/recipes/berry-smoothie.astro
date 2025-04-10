@@ -1,5 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import smoothieImage from '../../assets/recipes/Mixed Berries and Banana Smoothie.webp';
 ---
 
 <Layout title="Mixed Berries and Banana Smoothie - Health Body Balance">
@@ -10,7 +12,13 @@ import Layout from '../../layouts/Layout.astro';
     </div>
 
     <div class="mb-8">
-      <img src="/recipes/Mixed Berries and Banana Smoothie.webp" alt="Mixed Berries and Banana Smoothie" class="w-full aspect-[4/3] object-cover rounded-lg shadow-md" />
+      <Image
+        src={smoothieImage}
+        alt="Mixed Berries and Banana Smoothie"
+        class="w-full aspect-[4/3] object-cover rounded-lg shadow-md"
+        width={1200}
+        height={900}
+      />
     </div>
 
     <div class="bg-white p-8 rounded-lg shadow-md">

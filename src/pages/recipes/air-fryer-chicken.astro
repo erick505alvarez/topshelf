@@ -1,5 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import chickenImage from '../../assets/recipes/air-fryer-chicken-broccoli.webp';
 ---
 
 <Layout title="Healthy Air Fryer Parmesan Chicken with Broccoli - Health Body Balance">
@@ -10,7 +12,13 @@ import Layout from '../../layouts/Layout.astro';
     </div>
 
     <div class="mb-8">
-      <img src="/recipes/air-fryer-chicken-broccoli.webp" alt="Healthy Air Fryer Parmesan Chicken with Broccoli" class="w-full aspect-[4/3] object-cover rounded-lg shadow-md" />
+      <Image
+        src={chickenImage}
+        alt="Healthy Air Fryer Parmesan Chicken with Broccoli"
+        class="w-full aspect-[4/3] object-cover rounded-lg shadow-md"
+        width={1200}
+        height={900}
+      />
     </div>
 
     <div class="bg-white p-8 rounded-lg shadow-md">
