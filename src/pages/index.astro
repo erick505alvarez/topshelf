@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to TopShelf">
+  <div class="relative rounded-xl overflow-hidden">
+    <img
+      src="/products/DESCA-lifestyle.webp"
+      alt="TopShelf Lifestyle"
+      class="w-full h-[600px] object-cover"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold mb-4">Welcome to TopShelf</h1>
+        <p class="text-xl mb-8">Premium kitchen essentials for the modern home</p>
+        <a
+          href="https://www.amazon.com/dp/B0CGYSKWR5?ref=myi_title_dp"
+          class="inline-block bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+        >
+          Shop Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
+      <p class="text-xl text-gray-600">
+        At TopShelf, we believe that health and wellness should be accessible to everyone. Our mission is to provide premium kitchen essentials that combine functionality, durability, and style.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Quality Materials</h3>
+        <p class="text-gray-600">
+          We use only the finest materials to ensure our products stand the test of time.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Sustainable Practices</h3>
+        <p class="text-gray-600">
+          Our commitment to sustainability means we source materials responsibly and minimize waste.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Customer Satisfaction</h3>
+        <p class="text-gray-600">
+          Your satisfaction is our priority. We stand behind every product we sell.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+      <p class="text-xl text-gray-600 mb-8">
+        We're passionate about promoting a healthy lifestyle through better cooking and mindful eating.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Healthy Living Focus</h3>
+          <p class="text-gray-600">
+            Our recipes and products are designed to support your journey towards a healthier, more balanced lifestyle.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Community Support</h3>
+          <p class="text-gray-600">
+            Join our growing community of health-conscious individuals who share tips, recipes, and inspiration for better living.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Contact Us</h2>
+      <p class="text-md text-gray-600">
+        Have questions? We're here to help. Email us at contact@healthbodybalance.org
+      </p>
+    </div>
+  </div>
+</Layout> 
