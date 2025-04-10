@@ -1,4 +1,4 @@
-# Top Shelf - Premium Kitchen Essentials
+# TopShelf - Premium Kitchen Essentials
 
 A modern, responsive website built with Astro and React, showcasing premium cutting boards and kitchen essentials.
 
