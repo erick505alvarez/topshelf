@@ -6,6 +6,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  site: "https://topshelf.totalhealthandwellness.org",
+  site: "https://topshelf.healthbodybalance.org",
   base: "/topshelf",
 });
